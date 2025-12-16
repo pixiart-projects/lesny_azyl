@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Leśny Azyl - Odpocznij, Stwórz, Odkryj Rytm Natury</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Libre+Baskerville:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio id="background-audio" autoplay loop>
+<source src="nature.mp3" type="audio/mp3">
+</audio>
+<header>
+<video autoplay muted loop playsinline>
+<source src="video/video.mp4" type="video/mp4">
+</video>
+<nav>
+    <div class="container">
+        <div class="nav-background">
+            
+           <a href="#home" class="logo" id="logo-top-link">
+    <div class="leaf-container">
+        <span class="leaf-icon">🌿</span>
+    </div>
+    <span>LEŚNY AZYL</span> 
+</a>
+            
+            <div class="nav-right-content"> 
+                <div class="nav-links">
+                    <ul>
+                        <li><a href="#pobyty">Pobyty</a></li>
+                        <li><a href="#warsztaty">Warsztaty</a></li>
+                        <li><a href="#co-zabrac">Co zabrać</a></li>
+                        <li><a href="#kontakt">Kontakt</a></li>
+                    </ul>
+                </div>
+                
+                <div class="nav-controls">
+                    <a id="toggle-sound-btn" class="icon-button muted"><i class="fas fa-volume-mute"></i></a>
+                    <button id="menu-toggle-btn"><i class="fas fa-bars"></i></button>
+                </div>
+            </div>
+            </div>
+    </div>
+</nav>
+<div class="hero-content container">
+<h1>Leśny Azyl</h1>
+<p>Spokój · Muzyka · Rzemiosło · Rytm Natury</p>
+<a href="#rezerwacje" class="btn">Zarezerwuj Odpoczynek</a>
+</div>
+</header>
+<section id="filozofia">
+<div class="container">
+<h2>Filozofia Ciszy</h2>
+<p>
+Leśny Azyl to ukryte schronienie w sercu lasu.
+To przestrzeń stworzona dla twórczego wyciszenia, gdzie szum drzew zastępuje miejski zgiełk.
+Tutaj natura dyktuje rytm.
+</p>
+<p>
+Inspirujemy się ideą <em>slow life</em>, autentycznym rzemiosłem i terapią kojącym dźwiękiem Steel Tongue Drum.
+Zapraszamy do odłączenia się, by móc prawdziwie połączyć: ze sobą, z tworzeniem i z pięknem natury.
+</p>
+<div class="logo-separator">
+<div class="leaf-container-lg">
+<span class="leaf-icon-lg">🌿</span>
+</div>
+<span>Leśny Azyl</span>
+</div>
+</div>
+</section>
+<section id="pobyty">
+<div class="container">
+<h2>Pakiety Pobytowe</h2>
+<div class="grid">
+<div class="card">
+<h3>Leśne Tchnienie - Dzień Uważności</h3>
+<ul>
+<li>wybrany warsztat: Steel Tongue Drum lub rzeźbienie łyżek</li>
+<li>spacer uważności po lesie</li>
+<li>wspólne biesiadowanie przy ognisku</li>
+<li>możliwość własnoręcznego zaparzenia herbaty ze świeżo zebranych ziół</li>
+</ul>
+</div>
+<div class="card">
+<h3>Leśna Regeneracja- Kilka Dni Roslinnego Spokoju</h3>
+<ul>
+<li>nocleg w warunkach campingowych (własny namiot/proste miejsce w wiacie)</li>
+<li>pełny pakiet warsztatów rzemieślniczych i muzycznych</li>
+<li>codzienne spacery i wieczorne ogniska</li>
+<li>samodzielne przygotowywanie posiłków w kuchni polowej</li>
+<li>możliwość własnoręcznego zaparzenia herbaty ze świeżo zebranych ziół</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<section class="parallax-snycerstwo"></section>
+<section id="warsztaty">
+<div class="container">
+<h2>Warsztaty</h2>
+<div class="grid">
+<div class="card">
+<div class="card-video">
+  <video muted loop playsinline preload="metadata">
+    <source src="video/drum_workshop.mp4" type="video/mp4">
+  </video>
+
+  <button class="video-play-btn" aria-label="Odtwórz wideo">
+  </button>
+</div>
+
+<h3>Steel Tongue Drum: Rytm Ciszy</h3>
+<p>
+Wprowadzenie do gry na instrumencie Steel Tongue Drum, nastawione na relaks i uważność.
+</p>
+</div>
+<div class="card">
+<img
+src="imges/drewno.png"
+class="card-image"
+alt="Ręcznie rzeźbiona łyżka i podstawka">
+<h3>Rzeźba w drewnie - Łyżka i Podstawki</h3>
+<p>
+Tradycyjne rzeźbienie drewnianych łyżek przy użyciu noża i dłut.
+Stworzysz także proste podstawki pod świece lub kadzidła.
+</p>
+</div>
+<div class="card">
+<img
+src="imges/ognisko.png"
+class="card-image"
+alt="Czas w lesie przy ognisku">
+<h3>Las i Odpoczynek</h3>
+<p>
+Spacery bez pośpiechu, bycie w naturze, ogień jako centrum spotkania.
+Czas na regenerację i prostą obecność.
+</p>
+</div>
+</div>
+</div>
+</section>
+<section id="rezerwacje">
+<div class="container">
+<h2>Rezerwacja</h2>
+<p>
+Poniżej znajdziesz kalendarz rezerwacji warsztatów i pobytów. Kliknij w datę, aby zobaczyć szczegóły.
+</p>
+<div class="calendar-wrapper">
+<div class="calendar-nav"> 
+<button id="prev-month" class="nav-btn" aria-label="Poprzedni miesiąc">
+<i class="fas fa-chevron-left"></i>
+</button>
+<h3 id="current-month-display">Miesiąc Rok</h3> 
+<button id="next-month" class="nav-btn" aria-label="Następny miesiąc">
+<i class="fas fa-chevron-right"></i>
+</button>
+</div>
+<div class="legend">
+<span class="legend-item has-event">Warsztat</span>
+<span class="legend-item has-stay">Nocleg</span>
+<span class="legend-item unavailable">Zajęte</span>
+</div>
+<div class="calendar" id="calendar-grid">
+<div class="day-name">Pn</div>
+<div class="day-name">Wt</div>
+<div class="day-name">Śr</div>
+<div class="day-name">Cz</div>
+<div class="day-name">Pt</div>
+<div class="day-name">So</div>
+<div class="day-name">Nd</div>
+</div>
+<div id="reservation-details" class="details-card" style="display:none;">
+<h4 style="margin-bottom: 0.5rem; text-align: left;">
+Wybrana Data: <span id="details-date"></span>
+</h4>
+<div id="details-workshop-info" style="margin-bottom: 0.5rem;">
+</div>
+<div id="details-stay-info">
+</div>
+</div>
+</div>
+<p style="margin-top: 2rem; max-width: 650px; text-align: center;">
+Ilość miejsc jest ograniczona. Zapraszamy do rezerwacji.
+</p>
+<p class="group-info">
+Grupy zorganizowane (powyżej 6 osób), prosimy o kontakt telefoniczny lub mailowy w celu indywidualnej wyceny i ustalenia dostępności.
+</p>
+</div>
+</section>
+<section id="co-zabrac">
+<div class="container">
+<h2>Co zabrać?</h2>
+<ul>
+<li>ubrania na każdą pogodę</li>
+<li>buty do lasu</li>
+<li>śpiwór i karimatę (pobyty kilkudniowe)</li>
+<li>latarkę lub czołówkę</li>
+<li>jedzenie na czas pobytu (sklep oddalony o 30 km)</li>
+<li>kubek, menażkę, sztućce</li>
+</ul>
+<p>
+Jest możliwość własnoręcznego zaparzenia gorącej herbaty dla wszystkich uczestników.
+</p>
+<div class="section-separator"></div>
+<p>
+Na terenie obiektu dostępna jest również prosta kuchnia polowa do samodzielnego przygotowywania posiłków. Jest ona czynna głównie w sezonie wiosenno-letnim.
+</p>
+<p class="gastronomy-note">
+Na terenie ośrodka nie jest prowadzona działalność gastronomiczna. Należy zaopatrzyć się w prowiant we własnym zakresie. (Najbliższy sklep - ok. 30 km)
+</p>
+</div>
+</section>
+<section class="parallax-handpan"></section>
+<section id="kontakt">
+<div class="container">
+<h2>Kontakt</h2>
+<p>
+Jeśli czujesz, że to miejsce jest dla Ciebie - odezwij się.
+</p>
+<ul id="contact-list">
+<li><a href="mailto:kontakt@lesnyazyl.pl">Email: kontakt@lesnyazyl.pl</a></li>
+<li><a href="tel:000000000">Telefon: 000 000 000</a></li>
+</ul>
+</div>
+</section>
+<div id="modal-zrodla" class="modal-overlay">
+<div class="modal-content">
+<a href="#" id="close-zrodla-modal" class="close-btn" title="Zamknij">&times;</a>
+<h3>Źródła i Autorzy</h3>
+<p>
+Dziękujemy twórcom, którzy udostępnili swoje dzieła, oraz narzędziom AI.
+</p>
+<ul class="zrodla-lista">
+<li>
+**Wideo w nagłówku (`video.mp4`):** Video by <a href="https://pixabay.com/users/matthias_groeneveld-4535957/?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=189813">Matthias Groeneveld</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=video&utm_content=189813">Pixabay</a>
+</li>
+<li>
+**Wideo dla warsztatu Steel Drum:** Video by <a href="https://www.pexels.com/@antonishkraba/" target="_blank">Antoni Shkraba Studio</a> from <a href="https://www.pexels.com/video/female-playing-a-steel-tongue-drum-7580179/" target="_blank">Pexels</a>
+</li>
+<li>
+**Dźwięk lasu (`nature.mp3`):** Sound Effect by <a href="https://pixabay.com/users/empressnefertitimumbi-38087191/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=217212">Empress-Kathryne Nefertiti-Mumbi</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=217212">Pixabay</a>
+</li>
+<li>
+**Dodatkowy efekt dźwiękowy (bebęnki):** Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=48394">freesound_community</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=48394">Pixabay</a>
+</li>
+<li>**Grafiki Produktowe (np. snycerstwo, Steel Tongue Drum):** Obrazy wygenerowane przy użyciu narzędzi sztucznej inteligencji (AI).</li>
+<li>**Ikona Głośnika:** Font Awesome (licencja CC BY 4.0).</li>
+</ul>
+<p style="text-align: center; margin-top: 1.5rem;">
+*Niniejsza lista została utworzona w celu spełnienia wymogów licencyjnych użytych materiałów.*
+</p>
+</div>
+</div>
+<footer>
+<div class="container footer-content-primary">
+<span>Leśne Utulenie · Płomień Ogniska · Cisza</span>
+<a href="#" class="footer-logo-center logo" aria-label="Przejdź na górę strony">
+<div class="leaf-container">
+<span class="leaf-icon">🌿</span>
+</div>
+<span>Leśny Azyl</span>
+</a>
+<a href="#" id="open-zrodla-modal" class="footer-link">Źródła / Artyści</a>
+</div>
+<div class="author-info container"> <a
+href="mailto:kontak@pixiart.pl?subject=Wiadomość ze strony Pixiart"
+class="author-link-tile" 
+>
+<p>kontak@pixiart.pl</p>
+</a>
+<a href="https://pixiart.pl" target="_blank" class="author-link-tile">
+<p>pixiart.pl</p>
+</a>
+</div>
+</footer>
+<script src="scripts.js"></script>
+</body>
+</html>
